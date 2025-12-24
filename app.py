@@ -3,7 +3,7 @@ import datetime
 
 target_date = datetime.date(2025,12,31)
 
-st.sidebar.title('公主请输入')
+st.sidebar.title('尹雪活爹请输入')
 payout_date = st.sidebar.date_input('发放时间:25年底至26年4月30号之间',min_value=datetime.date(2025,12,31),max_value=datetime.date(2026,4,30))
 reviewer = st.sidebar.selectbox('年终评审人',['Chery','有人文气息的新老板'])
 supplier_of_the_year = st.sidebar.selectbox('哪个供应商最气人',['众鑫','繁荣','都不是好东西'])
@@ -42,6 +42,7 @@ if st.sidebar.button('提交'):
     else:
         st.warning('C和D没有年终奖')
         st.warning('0个月的年终奖')
+
 
 
 
